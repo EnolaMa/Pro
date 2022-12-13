@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+<style>
+ input:invalid {
+   border: 2px dashed red;
+ }
+
+ input:valid {
+     border: 2px solid black;
+ }
+</style>
+</head>
+<body>
+    <h3 class="align">Background </h3>
+    <hr/>
+    <hr/>
+   <!-- Menu： -->
+
+   <div  class="position">
+    <h4>Navigation</h4>
+<table>
+<tr>
+  <td>Catalog</td>
+  <td>
+    <a href= "catalog.html">page0 </a>
+  </td>
+</tr>
+  <td>Intro</td>
+  <td>
+    <a href= "selfIntro.html">page1 </a>
+  </td>
+</tr>
+<tr">
+  <td  style="color: rgb(228, 224, 175);">Country</td>
+  <td  style="color: rgb(228, 224, 175);">page2 </a>
+  </td>
+</tr>
+<tr>
+    <td>Major</td>
+    <td>
+        <a href= "cs.html">page3 </a>
+    </td>
+  </tr>
+  <tr>
+    <td>Hobby</td>
+    <td>
+        <a href= "hobby.html">page4 </a>
+    </td>
+  </tr>
+  <tr>
+    <td>Games</td>
+    <td>
+        <a href= "game.html">page5 </a>
+    </td>
+  </tr>
+</table>
+
+</div> 
+
+<img class = "spacious" src="ChinaFlag.jpg" width="300" height="200">
+
+<p><i>"People's Republic of China" redirects here. For the Republic of China, see Taiwan.</i></p>
+<p><i>"PRC" redirects here. For other uses, see PRC (disambiguation) and China (disambiguation).</i></p>
+<p style="padding: 1cm;"></p>
+<table>
+    <tr>
+        <td style="padding: 1cm;"></td>
+        <td class="boxC">
+            <p style="color: rgb(241, 166, 148);">China,[k] officially the People's Republic of China (PRC),[l] is a country in East Asia. 
+            It is the world's most populous country, with a population exceeding 1.4 billion, slightly ahead of India. 
+             China spans the equivalent of five time zones and borders fourteen countries by land,[m] the most of any country in the world, 
+            tied with Russia. China also has a narrow maritime boundary with the disputed Taiwan.
+            [n][o] Covering an area of approximately 9.6 million square kilometers (3,700,000 sq mi), 
+            it is the world's third largest country by total land area.[p] The country consists of 22 provinces,
+            [n] five autonomous regions, four municipalities, and two Special Administrative Regions (Hong Kong and Macau). 
+            The national capital is Beijing, and the most populous city and financial center is Shanghai.
+            </p>
+        </td>
+        <td style="padding: 1cm;"></td>
+    <td class="boxC">
+        <p style="color: rgb(241, 166, 148);">Modern Chinese trace their origins to a cradle of civilization in the fertile basin of the Yellow River in the North China Plain. 
+            The semi-legendary Xia dynasty in the 21st century BCE and the well-attested Shang and Zhou dynasties developed a bureaucratic political system to serve hereditary monarchies, or dynasties.
+             Chinese writing, Chinese classic literature, and the Hundred Schools of Thought emerged during this period and influenced China and its neighbors for centuries to come.
+              In the third century BCE, Qin's wars of unification created the first Chinese empire, the short-lived Qin dynasty. 
+              The Qin was followed by the more stable Han dynasty (206 BCE – 220 CE), 
+              which established a model for nearly two millennia in which the Chinese empire was one of the world's foremost economic powers.
+               The empire expanded, fractured and re-unified, was conquered and reestablished, absorbed foreign religions and ideas, and made world-leading scientific advances, 
+               such as the Four Great Inventions: gunpowder, paper, the compass, and printing.
+            </p>
+    </td>
+    <td style="padding: 1cm;"></td>
+    <td class="boxC">
+        <p style="color: rgb(241, 166, 148);">After centuries of disunion following the fall of the Han, the Sui (581–618) and Tang (618–907) dynasties reunified the empire.
+             The multi-ethnic Tang welcomed foreign trade and culture that came over the Silk Road and adapted Buddhism to Chinese needs.
+              The early modern Song dynasty (960–1279) became increasingly urban and commercial. 
+              The civilian scholar-official or literati used the examination system and the doctrines of Neo-Confucianism to replace the military aristocrats of earlier dynasties. 
+              The Mongol invasion established the Yuan dynasty in 1279, but the Ming dynasty (1368–1644) re-established Han Chinese control. 
+              The Manchu-led Qing dynasty nearly doubled the empire's territory and established a multi-ethnic state that was the basis of the modern Chinese nation,
+               but suffered heavy losses to foreign imperialism in the 19th century.
+            </p>
+    </td>
+    </tr>
+<tr>
+<td style="padding: 1cm;"></td>
+<td></td>
+<td style="padding: 1cm;"></td>
+<td></td>
+<td style="padding: 1cm;"></td>
+<td style="padding-left: 20%;"><h3>From <a href = "https://en.wikipedia.org/wiki/China">wikipedia</a></h3> </td>
+</tr>
+</table>
+
+<h2>Do you know how many pandas are in the US now?</h2>
+
+<p>Please input a number between 1 and 10:</p>
+<form>
+<input required 
+id="numb"
+value=0
+name = "pandanum"
+pattern=".{1,}"
+oninvalid="this.setCustomValidity('Enter User Name Here')"
+oninput="this.setCustomValidity('')">
+<p id="demo"></p>
+<br>
+<input type="button" value="Check" onclick="myFunction()">
+
+</form>
+
+<div id="panda">
+    <p style="padding-top: 3cm;" ></p>
+    <hr style="color: aliceblue;"/>
+    <table style="margin-left: 30%;">
+        <tr>
+            <td>
+                <p class="pandaB">P</p>
+            </td>
+            <td>
+                <p class="pandaW">a</p>
+            </td>
+            <td>
+                <p class="pandaB">n</p>
+            </td>
+            <td>
+                <p class="pandaW">d</p>
+            </td>
+            <td>
+                <p class="pandaB">a</p>
+            </td>
+            <td style="padding: 1cm;"></td>
+            <td>
+                <img :src="panda0" @mouseover = "updatePet(2)" @mouseleave = "resetPet"  >
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td style="padding: 1cm;"></td>
+            <td>
+                <h2 style="color: rgb(156, 156, 156);">Touch the picture to see it as a baby </h2>
+            </td>
+        </tr>
+    </table>
+    <div style="margin-left: 15%; margin-right: 15%;">
+        <p style="color: aliceblue;">Giant panda (scientific name: Ailuropoda melanoleuca) : belongs to the bear family,
+             the giant panda genus of mammals. There are only two subspecies. Males are slightly larger than females.
+              The body is fat like a bear, plenteous and rich, with a round head and short tail,
+               with a length of 1.2-1.8 meters and a tail of 10-12 centimeters. Weighing 80-120 kg, 
+               the maximum weight can reach 180 kg, the body color is black and white, the cheeks are round,
+                there are large "black circles", the iconic inner eight walking style, 
+                but also have scalpel-like sharp claws. Giant pandas have thick skin, 
+                up to 10 mm at the thickest point. The black and white appearance is conducive to hiding in the dense forest trees and snow on the ground and is not easy to be found by natural enemies.
+            It lives in dense bamboo forests at an altitude of 2600 to 3500 meters, where the air is always thin, cloudy and foggy, and the temperature is below 20 ° C. There is plenty of bamboo,
+             and the terrain and the distribution of water make it easy for the species to build nests and raise young.
+             Giant pandas are good at climbing trees and love to play. The act of climbing trees is usually a way for the weak to avoid the strong when approaching the date of courtship, or to escape danger,
+              or to meet each other. The giant panda removes half of the time to eat every day, and the remaining half of the time is mostly spent in sleep. In the wild,
+              pandas sleep for two to four hours between meals. 99% of the panda's food is bamboo, and there are 12 genera and more than 60 kinds of bamboo plants for giant pandas to eat. 
+            Giant pandas live between 18 and 20 years in the wild and over 30 years in captivity.
+            The giant panda has lived on the earth for at least 8 million years. It is known as the "living fossil" and "China's national treasure", 
+            that is, the national animal. The image ambassador of the World Wide Fund for Nature is the flagship species of the world's biodiversity protection. 
+            As of January 2021, the wild population of giant pandas in China had increased to 1,864. [1]
+            The giant panda is endemic to China and its main habitat is in the mountainous regions of Sichuan,
+             Shaanxi and Gansu provinces of China.
+             </p>
+    </div>
+    <div style="margin-left: 15%; margin-top: 1cm;">
+        <img :src="panda1" @mouseover = "updatePet2(3)" @mouseleave = "resetPet2" width="600">
+    </div>
+</div>
+<script src="pet.js"></script>
+
+
+
+
+</body>
+<footer>
+    <hr/>
+    <hr/>
+    <p style="color: rgb(97, 168, 109);">Author: Junyi Ma</p>
+    <p>page2</p>
+  </footer>
+</html>

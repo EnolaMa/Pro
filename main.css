@@ -1,0 +1,263 @@
+body { margin:120px;
+  
+} 
+
+@media screen and (max-width: 1600px) { 
+  body { margin:120px;
+  } 
+} 
+
+@media screen and (max-width: 1280px) { 
+  body { margin:100px; 
+  } 
+} 
+@media screen and (max-width: 960px) { 
+  body { margin:80px; 
+  } 
+}
+ @media screen and (max-width: 600px) { 
+  body { margin:50px;
+  } 
+} 
+
+* {
+color: #ffc56d;
+background-image: url("6.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+a {
+color: #cf87ba;
+}
+
+.spacious{
+margin:2em;
+}
+
+.align{
+text-align:center;
+font-size:4ch;
+}
+
+.country{
+    font-size: 1cm;
+    color: #cc3b3b;
+}
+
+.img{
+    border-radius: 8px;
+    position: absolute;
+    top:7cm;
+    left:60%;
+}
+
+table{
+background-color:#ad9d76;
+}
+
+#demo{
+border: rgb(137, 133, 148) 2px solid;
+}
+
+.wrapper{
+display: grid;
+flex-wrap: wrap;
+}
+
+.pandaW{
+    font-size: 2cm;
+    color: rgb(250, 250, 250);
+}
+
+.pandaB{
+    font-size: 2cm;
+    color: rgb(129, 129, 129);
+}
+
+.box
+{
+border: 1px rgb(150, 83, 100) solid;
+padding:2px;
+margin: 5px;
+box-shadow: 0px 3px 3px gray;
+}
+
+.boxD{
+    width: 7cm;
+    padding:2px;
+    margin: 5px;
+    box-shadow: 0px 3px 3px gray;
+}
+
+.boxC{
+    width: 10cm;
+    padding:1px;
+    margin-left: 20px;
+    box-shadow: 4px 5px 5px rgb(211, 84, 84);
+    z-index: 2;
+}
+
+
+.position{
+border: 3px rgb(211, 214, 182) solid;
+position: fixed;
+text-align:center;
+top:7cm;
+left:0px;
+z-index: 2;
+animation: mymove 3s;
+animation-fill-mode: forwards;
+}
+
+.gameimg{
+    width: 100%;
+}
+
+.gameimg2{
+    width: 33%;
+}
+
+.catamove1{
+    position:absolute;
+    text-align:center;
+    top:7cm;
+    left:6cm;
+    z-index: 1;
+    animation: cmove 3s;
+    animation-fill-mode:forwards;
+    }
+.catamove2{
+    position: absolute;
+    text-align:center;
+    top:10cm;
+    left:6cm;
+    z-index: 1;
+    animation: cmove 3s;
+    animation-fill-mode:forwards;
+    }
+.catamove3{
+    position: absolute;
+    text-align:center;
+    top:13cm;
+    left:6cm;
+    z-index: 1;
+    animation: cmove 3s;
+    animation-fill-mode:forwards;
+    }
+.catamove4{
+    position: absolute;
+    text-align:center;
+    top:16cm;
+    left:6cm;
+    z-index: 1;
+    animation: cmove 3s;
+    animation-fill-mode:forwards;
+    }
+.catamove5{
+    position: absolute;
+    text-align:center;
+    top:19cm;
+    left:6cm;
+    z-index: 1;
+    animation: cmove 3s;
+    animation-fill-mode:forwards;
+    }
+
+footer{
+text-align:end;
+padding-top:5cm;
+}
+
+.cata{
+margin: 3cm;
+
+}
+
+@keyframes mymove {
+from {top: 0px;}
+  to {top: 200px;}
+}
+
+@keyframes cmove {
+    from {left: 0cm;}
+      to {left: 42%;}
+    }
+
+    #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
